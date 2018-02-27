@@ -1,0 +1,9 @@
+*.egg-info
+docs/_build/
+*py[co]
+__pycache__
+/build
+/dist
+.tox
+.coverage
+.DS_Store
