@@ -26,12 +26,12 @@ class BaseUrl(models.Model):
         _('pattern'),
         max_length=255,
         help_text=_(
-           "Case-sensitive. A missing trailing slash does al"
-           "so match to files which start with the name of "
-           "the pattern, e.g., '/admin' matches /admin.html "
-           "too. Some major search engines allow an asterisk"
-           " (*) as a wildcard and a dollar sign ($) to "
-           "match the end of the URL, e.g., '/*.jpg$'."))
+            "Case-sensitive. A missing trailing slash does al"
+            "so match to files which start with the name of "
+            "the pattern, e.g., '/admin' matches /admin.html "
+            "too. Some major search engines allow an asterisk"
+            " (*) as a wildcard and a dollar sign ($) to "
+            "match the end of the URL, e.g., '/*.jpg$'."))
 
     class Meta:
         verbose_name = _('url')
@@ -53,14 +53,14 @@ class BaseUrl(models.Model):
 
 class AllowedUrl(BaseUrl):
     rule = ParentalKey(
-         'robots.Rule',
-         related_name='allowed')
+        'robots.Rule',
+        related_name='allowed')
 
 
 class DisallowedUrl(BaseUrl):
     rule = ParentalKey(
-         'robots.Rule',
-         related_name='disallowed')
+        'robots.Rule',
+        related_name='disallowed')
 
 
 class Rule(ClusterableModel):
