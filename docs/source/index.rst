@@ -10,7 +10,7 @@ This started as a fork of `Django Robots`_ but because of the differences
 between the Django Admin and the Wagtail Admin, and other project requirements
 git history has not been retained.
 
-For installation instructions and configuration instructions, keep reading.
+For installation and configuration instructions, keep reading.
 
 .. _robots exclusion protocol: http://en.wikipedia.org/wiki/Robots_exclusion_standard
 .. _Django: http://www.djangoproject.com/
@@ -43,7 +43,7 @@ Then follow these steps:
    you'll only need to change this if you've changed that setting.
 3. Run the ``migrate`` management command
 
-You may want to additionally install setup the `Wagtail sitemap generator`_.
+You may want to additionally setup the `Wagtail sitemap generator`_.
 
 And if you install or already happen to be using `CondensedInlinePanel`_ this
 library will automatically use it in place of InlinePanel for the Rule create
