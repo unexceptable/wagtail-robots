@@ -1,5 +1,6 @@
+import django
+
 from django.db import models
-from django.utils.six import u
 from django.utils.text import get_text_list
 from django.utils.translation import ugettext_lazy as _
 
@@ -15,6 +16,11 @@ if WAGTAIL_VERSION >= (2, 0):
 else:
     from wagtail.wagtailcore.models import Site
     from wagtail.wagtailadmin.edit_handlers import FieldPanel
+
+if django.VERSION >= (3, 0):
+    from six import u
+else:
+    from django.utils.six import u
 
 
 class BaseUrl(models.Model):
