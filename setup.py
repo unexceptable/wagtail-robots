@@ -8,7 +8,7 @@ with open('README.rst') as file:
 setup(
     name='wagtail-robots',
     long_description=long_description,
-    version="0.1.2",
+    version="0.2.0",
     description='Robots.txt exclusion for Wagtail, complementing Sitemaps.',
     author='Adrian Turjak',
     author_email='adriant@catalyst.net.nz',
