@@ -93,7 +93,9 @@ class RuleList(ListView):
         if not cache_timeout:
             return super_dispatch(request, *args, **kwargs)
         key_prefix = self.current_site.hostname
-        cache_decorator = cache_page(cache_timeout, key_prefix=key_prefix)
+        cache_decorator = cache_page(
+            cache_timeout, key_prefix=key_prefix,
+            cache=settings.CACHE_ALIAS)
         return cache_decorator(super_dispatch)(request, *args, **kwargs)
 
 
