@@ -16,7 +16,7 @@ class RuleAdmin(ModelAdmin):
     def affected_sites(self, obj):
         sites = obj.sites.all()
         if sites:
-            return ",".join([s.site_name for s in sites])
+            return ",".join([s.site_name or s.hostname for s in sites])
         else:
             return "All sites."
     affected_sites.short_description = 'sites'
