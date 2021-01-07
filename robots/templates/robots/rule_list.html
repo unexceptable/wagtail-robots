@@ -2,7 +2,7 @@
 {% endif %}User-agent: {{ rule.robot }}{% endifchanged %}
 {% for url in rule.allowed.all %}Allow: {{ url.pattern|safe }}
 {% endfor %}{% for url in rule.disallowed.all %}Disallow: {{ url.pattern|safe }}
-{% endfor %}{% if rule.crawl_delay %}Crawl-delay: {% localize off %}{{ rule.crawl_delay|floatformat:'0' }}{% endlocalize %}
+{% endfor %}{% if rule.crawl_delay %}Crawl-delay: {% localize off %}{{ rule.crawl_delay|floatformat:'1' }}{% endlocalize %}
 {% endif %}{% endfor %}{% elif disallow_all %}User-agent: *
 Disallow: /
 {% else %}User-agent: *
