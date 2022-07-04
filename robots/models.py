@@ -19,8 +19,10 @@ else:
 
 if django.VERSION >= (3, 0):
     from six import u
+    from django.utils.translation import gettext_lazy as _
 else:
     from django.utils.six import u
+    from django.utils.translation import ugettext_lazy as _
 
 
 class BaseUrl(models.Model):
