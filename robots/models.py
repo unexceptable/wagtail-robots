@@ -2,7 +2,7 @@ import django
 
 from django.db import models
 from django.utils.text import get_text_list
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from modelcluster.models import ClusterableModel
 from modelcluster.fields import ParentalKey
