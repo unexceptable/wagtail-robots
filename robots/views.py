@@ -39,7 +39,7 @@ class RuleList(ListView):
             else:
                 return reverse(sitemap)
         except NoReverseMatch:
-                pass
+            pass
 
     def get_domain(self):
         scheme = self.request.is_secure() and 'https' or 'http'
