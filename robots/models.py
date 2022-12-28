@@ -2,7 +2,7 @@ import django
 
 from django.db import models
 from django.utils.text import get_text_list
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from modelcluster.models import ClusterableModel
 from modelcluster.fields import ParentalKey
@@ -10,12 +10,12 @@ from modelcluster.fields import ParentalKey
 from robots.panels import WrappedInlinepanel
 
 from wagtail import VERSION as WAGTAIL_VERSION
-if WAGTAIL_VERSION >= (2, 0):
+if WAGTAIL_VERSION >= (3, 0):
+    from wagtail.models import Site
+    from wagtail.admin.panels import FieldPanel
+else:
     from wagtail.core.models import Site
     from wagtail.admin.edit_handlers import FieldPanel
-else:
-    from wagtail.wagtailcore.models import Site
-    from wagtail.wagtailadmin.edit_handlers import FieldPanel
 
 if django.VERSION >= (3, 0):
     from six import u

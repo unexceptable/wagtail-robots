@@ -7,3 +7,5 @@ __pycache__
 .tox
 .coverage
 .DS_Store
+
+/test_robots.db
