@@ -11,15 +11,8 @@ user:
 migrate:
 	@python testmanage.py migrate
 
-tox-215:
-	tox -e py38-dj32-wt215
-
-tox-216:
-	tox -e py38-dj32-wt216
-
-tox-3:
-	tox -e py38-dj40-wt30
-
-tox-4:
-	tox -e py38-dj40-wt40
+tox-41:
 	tox -e py38-dj41-wt41
+
+tox-42:
+	tox -e py38-dj42-wt42
