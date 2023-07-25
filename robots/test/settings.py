@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     "wagtail.contrib.routable_page",
     "wagtail.contrib.styleguide",
     "wagtail.sites",
-    "wagtail.core",
+    "wagtail",
     "taggit",
     "rest_framework",
     "django.contrib.admin",
