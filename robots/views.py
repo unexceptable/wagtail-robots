@@ -1,23 +1,13 @@
-import django
 from django.db.models import Q
 from django.views.decorators.cache import cache_page
 from django.views.generic import ListView
+from django.urls import NoReverseMatch, reverse
+
+from wagtail.contrib.sitemaps.views import sitemap
+from wagtail.models import Site
 
 from robots import settings
 from robots.models import Rule
-
-if django.VERSION[:2] >= (2, 0):
-    from django.urls import NoReverseMatch, reverse
-else:
-    from django.core.urlresolvers import NoReverseMatch, reverse
-
-from wagtail import VERSION as WAGTAIL_VERSION # noqa
-if WAGTAIL_VERSION >= (3, 0):
-    from wagtail.models import Site
-else:
-    from wagtail.core.models import Site
-
-from wagtail.contrib.sitemaps.views import sitemap
 
 
 class RuleList(ListView):

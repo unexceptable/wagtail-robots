@@ -20,7 +20,7 @@ setup(
         ],
     },
     install_requires=[
-        'wagtail>=2.15',
+        'wagtail>=4.1',
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -33,16 +33,15 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Topic :: Software Development',
         'Topic :: Software Development :: Libraries :: Application Frameworks',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Framework :: Django',
         'Framework :: Django :: 3.2',
-        'Framework :: Django :: 4.0',
         'Framework :: Django :: 4.1',
-        'Framework :: Wagtail :: 2',
-        'Framework :: Wagtail :: 3',
+        'Framework :: Django :: 4.2',
         'Framework :: Wagtail :: 4',
+        'Framework :: Wagtail :: 5',
     ]
 )
