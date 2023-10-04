@@ -21,6 +21,7 @@ setup(
     },
     install_requires=[
         'wagtail>=4.1',
+        'wagtail_modeladmin>=1.0',
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
