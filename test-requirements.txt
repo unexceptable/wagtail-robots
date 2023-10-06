@@ -2,4 +2,3 @@ flake8>=3.0.4
 sphinx!=1.6.1,>=1.5.1
 sphinx-rtd-theme>=0.2.4
 doc8
-wagtail_modeladmin>=1.0
