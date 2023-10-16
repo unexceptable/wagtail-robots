@@ -30,6 +30,7 @@ Installation
 Use your favorite Python installer to install it from PyPI::
 
    pip install wagtail-robots
+   pip install wagtail_modeladmin  # if Wagtail >= 5.1
 
 Or get the source from the application site at::
 
@@ -37,7 +38,15 @@ Or get the source from the application site at::
 
 Then follow these steps:
 
-1. Add ``'wagtail.contrib.modeladmin'`` and ``'robots'`` to your INSTALLED_APPS_ setting.
+1. Add ``robots`` and ``modeladmin`` to the ``INSTALLED_APPS`` setting in your project settings::
+
+      INSTALLED_APPS = [
+         ...
+         'wagtail_modeladmin',          # if Wagtail >=5.1; Don't repeat if it's there already
+         'wagtail.contrib.modeladmin',  # if Wagtail <5.1;  Don't repeat if it's there already
+         'robots',
+      ]
+
 2. Run the ``migrate`` management command
 
 You may want to additionally setup the `Wagtail sitemap generator`_.
