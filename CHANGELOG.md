@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Add Wagtail 5.2 and Python 3.12 to test matrices
+- Add Wagtail 5.2 to test matrices
 
 ## 1.0.1 (2023-10-16)
 
