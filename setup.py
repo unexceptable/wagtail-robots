@@ -21,12 +21,8 @@ setup(
     },
     install_requires=[
         'wagtail>=5.2',
+        'wagtail-modeladmin>=2.0',
     ],
-    extras_require={
-        'testing': [
-            'wagtail-modeladmin>=2.0',
-        ],
-    },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',

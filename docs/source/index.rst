@@ -30,7 +30,6 @@ Installation
 Use your favorite Python installer to install it from PyPI::
 
    pip install wagtail-robots
-   pip install wagtail_modeladmin  # if Wagtail >= 5.1
 
 Or get the source from the application site at::
 
