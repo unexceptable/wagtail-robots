@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Add Wagtail 6.0 to test matrices
+
+## 1.1.0+tbx (2024-03-05)
+
 - Add Wagtail 5.2 to test matrices
 
 ## 1.0.1 (2023-10-16)

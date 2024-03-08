@@ -20,13 +20,9 @@ setup(
         ],
     },
     install_requires=[
-        'wagtail>=4.1',
+        'wagtail>=5.2',
+        'wagtail-modeladmin>=2.0',
     ],
-    extras_require={
-        'testing': [
-            'wagtail-modeladmin>=1.0',
-        ],
-    },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
@@ -42,11 +38,12 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
         'Framework :: Django',
         'Framework :: Django :: 3.2',
-        'Framework :: Django :: 4.1',
         'Framework :: Django :: 4.2',
-        'Framework :: Wagtail :: 4',
+        'Framework :: Django :: 5.0',
         'Framework :: Wagtail :: 5',
+        'Framework :: Wagtail :: 6',
     ]
 )
