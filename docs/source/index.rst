@@ -37,7 +37,14 @@ Or get the source from the application site at::
 
 Then follow these steps:
 
-1. Add ``'wagtail.contrib.modeladmin'`` and ``'robots'`` to your INSTALLED_APPS_ setting.
+1. Add ``robots`` and ``modeladmin`` to the ``INSTALLED_APPS`` setting in your project settings::
+
+      INSTALLED_APPS = [
+         ...
+         'wagtail_modeladmin',
+         'robots',
+      ]
+
 2. Run the ``migrate`` management command
 
 You may want to additionally setup the `Wagtail sitemap generator`_.

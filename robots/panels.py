@@ -1,12 +1,11 @@
-from distutils.version import LooseVersion
+try:
+    from distutils.version import LooseVersion
+except ImportError:
+    from setuptools.distutils.version import LooseVersion
 
 from django.conf import settings
 
-from wagtail import VERSION as WAGTAIL_VERSION
-if WAGTAIL_VERSION >= (3, 0):
-    from wagtail.admin.panels import InlinePanel
-else:
-    from wagtail.admin.edit_handlers import InlinePanel
+from wagtail.admin.panels import InlinePanel
 
 
 def WrappedInlinepanel(relation_name, heading='', label='',
@@ -26,15 +25,10 @@ def WrappedInlinepanel(relation_name, heading='', label='',
                 'new_card_header_text': new_card_header_text,
             }
     else:
-        if WAGTAIL_VERSION >= (2, 0):
-            defaults = {
-                'heading': heading,
-                'label': label,
-            }
-        else:
-            defaults = {
-                'label': label,
-            }
+        defaults = {
+            'heading': heading,
+            'label': label,
+        }
 
     defaults.update(kwargs)
     return klass(relation_name, **defaults)
